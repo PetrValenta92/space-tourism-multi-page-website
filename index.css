@@ -110,3 +110,7 @@ select {
 .text-dark {color: hsl( var(--cl-dark));}
 .text-accent {color: hsl( var(--cl-light));}
 .text-white {color: hsl( var(--cl-white));}
+
+.example-component {
+    background-color: hsl( var(--cl-light) / .2 );
+}
