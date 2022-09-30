@@ -280,3 +280,24 @@ select {
 .dot-indicators > [aria-selected="true"] {
     background-color: hsl( var(--cl-white) / 1);
 }
+
+.number-indicator > * {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 4rem;
+    aspect-ratio: 1;
+    color: hsl( var(--cl-white));
+    background-color: hsl( var(--cl-dark));
+    border: .1em solid hsl( var(--cl-white) / .25 );
+}
+
+.number-indicator > *:hover,
+.number-indicator > *:focus {
+    border-color: hsl( var(--cl-white) / .5 );
+}
+
+.number-indicator > [aria-selected="true"] {
+    color: hsl( var(--cl-dark));
+    background-color: hsl(var(--cl-white));
+    border: none;
+}
