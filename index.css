@@ -290,6 +290,8 @@ select {
     margin: 0;
     padding: 0;
     background: hsl( var(--cl-dark) / .95);
+    /* idea? */
+    transition: 1s;
 }
 
 .mobile-nav-toggle {
@@ -314,6 +316,11 @@ select {
         padding: min(20rem , 15vh) 2rem;
         flex-direction: column;
         transform: translateX(100%);
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0);
+        transition: 1s;
     }
 
     .primary-navigation.underline-indicators > .active {
