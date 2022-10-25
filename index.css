@@ -197,6 +197,24 @@ select {
     border: 0;
   }
 
+.skip-to-content {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: hsl( var(--cl-white));
+    color: hsl( var(--cl-dark));
+    padding: .5em 1em;
+    translate: 0 -100%;
+    transition: translate 250ms ease-in;
+}
+
+.skip-to-content:focus { 
+    translate: 0;
+}
+
 /* colors */
 .bg-dark {background-color: hsl( var(--cl-dark));}
 .bg-accent {background-color: hsl( var(--cl-light));}
